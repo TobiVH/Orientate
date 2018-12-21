@@ -1,62 +1,45 @@
-
-
-body{
-    
-}
-
-h1{
-    font-family: Helvetica;
-    font-size: 40px;
-    font-weight: lighter;
-    margin: 15px;
-}
-
-span{
-
-    font-style: italic;
-    font-size: 20px;
-    font-weight: bold;
-}
-
 .container{
     display: grid;
-    grid-gap: 1px;
-    height: 2000px;
     width: 100%;
-    grid-template-rows: repeat(80, 1fr);
-    grid-template-columns: repeat(40, 1fr);
-    
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: repeat(16, 100px);
 }
 
 .Header{
-    grid-area: 1 / 1 / 7 / 41;
-    display: grid;
-    color: white;
-    justify-content: center;
-    /*Encontrar una imagen que sea muy alargada*/
-    /*background-image: url("https://image.freepik.com/foto-gratis/educacion-estudiantes-personas-conocimiento-concepto_53876-49197.jpg");*/
-    background-color: cornflowerblue;
+    grid-area: 1 / 1 / 2 / 6;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(166, 214, 83);
 }
 
 .Htext{
-    border: 4px solid white;
     text-align: center;
 }
 
-
-.Options{
-    grid-area: 8 / 1 / 12 / 41;
-    box-sizing: border-box;
-    background-color: greenyellow;
-    
-
-
+h1{
+    margin: 0.3em 0.3em 0 0.3em;
+    font-size: 2em;
+    font-family: Georgia;
 }
 
-.Information{
-    grid-area: 12 / 1 / 21 / 41;
-    padding: 0px 10px;
-    box-sizing: border-box;
-    background-color: azure; 
+h5{
+    margin: 0.1em 0.3em 0.3em 0.8em;
+}
 
+.Options{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 2em;
+    align-items: center;
+    justify-items: center;
+    font-weight: 600;
+    border-top: 0.09em solid blue;
+}
+
+.BRight{
+    margin: 0em;
+    box-sizing: border-box;
+    width: 12.90em;
+    text-align: center;
+    border-right: 0.05em solid blue;
 }
