@@ -1,83 +1,64 @@
 .container{
+    width: 100%;
     display: grid;
-    width: 100%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: repeat(16, 6em);
-}
-
-.Header{
-    grid-area: 1 / 1 / 2 / 6;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: rgb(166, 214, 83);
-    border: 0.05em solid blue;
-}
-
-.Htext{
-    text-align: center;
-}
-
-h1{
-    margin: 0.3em 0.3em 0 0.3em;
-    font-size: 2em;
-    font-family: Georgia;
-}
-
-h5{
-    margin: 0.1em 0.3em 0.3em 0.8em;
+    grid-template: 30px repeat(30,100px) / repeat(5,20%);
 }
 
 .Options{
+    width: 1271px;
+    font-family: Helvetica;
+    position: fixed;
+    top: 0;
+    color: rgb(202, 200, 200);
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 2em;
+    grid-template: 40px / repeat(6, 16.66%);
     align-items: center;
     justify-items: center;
-    font-weight: 600;
-    border-top: 0.09em solid blue;
+    background-color: rgb(28,28,28);
 }
 
 .Information{
-    display: grid;
-    grid-template: 30em / 60%;
-    grid-area: 2 / 1 / 7 / 6;
-    background-image: url(https://image.freepik.com/foto-gratis/equipo-estudiantes-que-completan-tarea_23-2147666610.jpg);
-    background-size: cover;
-    align-items: center;
-    justify-items: center;
-}
-
-.InfBox{
-    display: grid;
-    grid-template: 80% 20% / 100%;
+    margin-top: 10px;
     box-sizing: border-box;
-    border-radius: 1em;
-    width: 90%;
-    height: 90%;
-    background-color: rgba(128, 128,128, 0.6);
-    align-items: center;
-    justify-items: center;
+    grid-area: 2 / 1 / 8 / 6;
+    background-color: bisque;
 }
 
-.InfBox p{
-    grid-area: 1 / 1 / 2 / 2;
-    text-align: center;
-    margin: 1%;
-    color: white;
-  
+.Announcements{
+    width: 100%;
+    grid-area: 8 / 1 / 26 / 6;
+    display: grid;
+    grid-template: repeat(4, 425px) / repeat(2 , 49.5%);
+    grid-gap: 1%;
+    margin-top: 15px;
 }
 
-.Information .InfBox a{
-    grid-area: 2 / 1 / 3 / 2;
-    color: white;
-    font-size: 1.5em;
-    box-sizing: border-box;
-    padding: 10px 5px;
-    font-weight: 600;
-    border: 0.1em solid white;
-
+.A {
+    background-color: aliceblue;
+}
+.B {
+    background-color: red;
+}
+.C {
+    background-color: green;
+}
+.D {
+    background-color: brown;
+}
+.E {
+    background-color: yellow;
+}
+.F {
+    background-color: blueviolet;
+}
+.G {
+    background-color: blue;
+}
+.H {
+    background-color: grey;
 }
 
-
-
-
+.foot{
+    grid-area: 26 / 2 / 29 / 5;
+    background-color: black;
+}
