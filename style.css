@@ -9,12 +9,13 @@
 .container{
     width: 100%;
     display: grid;
-    grid-template: 30px repeat(27,100px) / repeat(5,20%);
+    grid-template: 30px repeat(26,100px) / repeat(5,20%);
 }
 
 .Options{
-    width: 1271px;
+    width: 100%;
     font-family: Helvetica;
+    letter-spacing: 0.05em;
     position: fixed;
     top: 0;
     color: rgb(202, 200, 200);
@@ -26,9 +27,29 @@
 }
 
 .Information{
+    display: grid;
     margin-top: 10px;
     grid-area: 2 / 1 / 8 / 6;
-    background-color: rgba(255, 228, 196, 0.3);
+    grid-template: 40% 60% / 25% 50% 25%; 
+    background-image: url("./Images/InformationBG.jpg");
+    background-size: cover;
+    border-radius: 1%;
+    margin-top: 1%;
+}
+
+.Front{
+    margin: 5%;
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 4em;
+    color: white;
+    justify-self: center;
+    align-self: end;
+}
+
+.Information p{
+    font-size: 1.5em;
+    grid-area: 2 / 2 / 3 / 3;
+    color: white;
 }
 
 .Announcements{
@@ -42,7 +63,7 @@
 
 .Box{
     border: 0.1px solid black;
-    box-shadow: 2px 2px rgba(28, 28, 28, 0.4);
+    box-shadow: 2px 2px rgba(28, 28, 28, 0.5);
 }
 
 .A {
@@ -73,7 +94,7 @@
 .foot{
     display: grid;
     grid-template: 100% / repeat(6, 16.66%);
-    grid-area: 26 / 1 / 29 / 6;
+    grid-area: 26 / 1 / 28 / 6;
     background-color: black;
     color: white;
     justify-items: center;
