@@ -1,7 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
 .container{
     width: 100%;
     display: grid;
-    grid-template: 30px repeat(30,100px) / repeat(5,20%);
+    grid-template: 30px repeat(27,100px) / repeat(5,20%);
 }
 
 .Options{
@@ -19,18 +27,22 @@
 
 .Information{
     margin-top: 10px;
-    box-sizing: border-box;
     grid-area: 2 / 1 / 8 / 6;
-    background-color: bisque;
+    background-color: rgba(255, 228, 196, 0.3);
 }
 
 .Announcements{
     width: 100%;
     grid-area: 8 / 1 / 26 / 6;
     display: grid;
-    grid-template: repeat(4, 425px) / repeat(2 , 49.5%);
-    grid-gap: 1%;
+    grid-template: repeat(4, 425px) / repeat(2 , 49.3%);
+    grid-gap: 1.4%;
     margin-top: 15px;
+}
+
+.Box{
+    border: 0.1px solid black;
+    box-shadow: 2px 2px rgba(28, 28, 28, 0.4);
 }
 
 .A {
@@ -59,6 +71,16 @@
 }
 
 .foot{
-    grid-area: 26 / 2 / 29 / 5;
+    display: grid;
+    grid-template: 100% / repeat(6, 16.66%);
+    grid-area: 26 / 1 / 29 / 6;
     background-color: black;
+    color: white;
+    justify-items: center;
+    line-height: 2;
+
+}
+
+.OnMe:hover {
+    color: white;
 }
