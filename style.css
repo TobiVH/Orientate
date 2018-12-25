@@ -6,7 +6,7 @@
 
 
 
-.container{
+.Container{
     width: 100%;
     display: grid;
     grid-template: 30px repeat(26,100px) / repeat(5,20%);
@@ -19,12 +19,20 @@
     position: fixed;
     top: 0;
     color: rgb(202, 200, 200);
-    display: grid;
-    grid-template: 40px / repeat(6, 16.66%);
-    align-items: center;
-    justify-items: center;
     background-color: rgb(28,28,28);
 }
+
+.Menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.Menu li{
+    text-decoration: none;
+    list-style: none
+}
+
 
 .Information{
     display: grid;
